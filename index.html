@@ -5,44 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wishlist</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: sans-serif;
-      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
       margin: 0;
       padding: 2rem;
     }
-    .item {
-      background: white;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    h1 {
+      text-align: center;
     }
+
+    #wishlist {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .item {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 1rem;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
     .item img {
       width: 120px;
       height: auto;
       border-radius: 6px;
+      object-fit: cover;
     }
+
     .info {
       flex: 1;
     }
+
     .info h2 {
-      margin: 0 0 0.2rem;
+      margin: 0;
     }
+
     .info p {
-      margin: 0.2rem 0;
+      margin: 0.3rem 0;
     }
+
     .reserve {
       margin-top: 0.5rem;
     }
+
     .reserve input {
-      padding: 0.3rem;
+      padding: 0.4rem;
+      font-size: 1rem;
     }
+
     .reserve button {
-      padding: 0.3rem 0.6rem;
+      padding: 0.4rem 0.8rem;
+      font-size: 1rem;
+      margin-left: 0.5rem;
+      cursor: pointer;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .reserve button:hover {
+      background-color: #45a049;
     }
   </style>
 </head>
